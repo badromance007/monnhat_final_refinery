@@ -7,7 +7,10 @@
 
 <div class="row">
 	<div class="col-sm-8 blog-main">
-		<%= raw @page.content_for('body') %>
+		<div class="blog-post">
+			<h1><%= raw @page.content_for :body_content_title %></h1>
+			<%= raw @page.content_for('body') %>
+		</div>		
 	</div>
 	<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
 		<%= raw @page.content_for('side_body') %>
