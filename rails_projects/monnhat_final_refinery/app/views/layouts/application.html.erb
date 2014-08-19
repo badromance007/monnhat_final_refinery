@@ -6,17 +6,20 @@
   </head>
   <body>
     <%= site_bar -%>
-      <div class="blog-masthead">
-        <div class="container">
-          <%= render "/refinery/header" -%>
-        </div>
-      </div>
+    <div class="blog-masthead">
       <div class="container">
-        <%= yield %>
+        <%= render "/refinery/header" -%>
       </div>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
       <div class="blog-footer">
         <%= render "/refinery/footer" -%>
       </div>
+    
     <%= render "/refinery/javascripts" %>
   </body>
 </html>

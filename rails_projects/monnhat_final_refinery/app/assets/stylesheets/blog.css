@@ -35,6 +35,21 @@ h6, .h6 {
  * Masthead for nav
  */
 
+.blog-nav #logo {
+  position: relative;
+  display: inline;
+  margin-top: 10px;
+  margin-bottom: -2px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: -5px;
+  font: normal bold 150% "Arial Black", "Helvetica Black", Gadget, sans-serif;
+}
+.blog-nav #logo a {
+    color: #FFF;
+    text-decoration: none;
+}
+
 .blog-masthead {
   background-color: #428bca;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
