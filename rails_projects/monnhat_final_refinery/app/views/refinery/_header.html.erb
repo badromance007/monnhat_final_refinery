@@ -12,9 +12,9 @@
 	<div class="pull-right">
 		<% Refinery::Page.where(parent_id:nil).all.each do |page| %>
 			<% if @page.slug == page.slug %>
-				<%= link_to page.title, page, :class=>"blog-nav-item active" %>
+				<%= link_to page.menu_title, page, :class=>"blog-nav-item active" %>
 			<% else %>
-				<%= link_to page.title, page, :class=>"blog-nav-item" %>
+				<%= link_to page.menu_title, page, :class=>"blog-nav-item" %>
 			<% end %>
 		<% end %>
 	</div>
