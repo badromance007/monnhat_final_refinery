@@ -1,5 +1,3 @@
-<!--<%= render '/refinery/content_page' %>-->
-
 <div class="blog-header">
 	<h1 class="blog-title">Món Nhật Bản</h1>
 	<p class="lead blog-description">Thiên đường món ăn Nhật Bản. Nơi giới thiệu, sưu tầm và tổng hợp các thông tin về món ăn Nhật Bản.</p>
@@ -9,7 +7,7 @@
 	<div class="col-sm-8 blog-main">
 		<div class="blog-post">
 			<h2 class="blog-post-title"><%= @page.title %></h2>
-			<p class="blog-post-meta"><%= @page.created_at.to_s(:long)  %> by Tuong Trong Nguyen</p>
+			<p class="blog-post-meta"><%= @page.created_at.to_s(:long)  %> <a href="#">Tuong Trong Nguyen</a></p>
 			<%= raw @page.content_for('body') %>
 		</div>		
 	</div>
